@@ -1,0 +1,47 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(141, 236, 129);
+}
+    .Login-form {
+    height: 310px;
+     width: 270px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+     box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
+     color: #fff;
+      padding-top: 60px;}
+
+
+
+
+.Login {
+letter-spacing: 1px;}
+
+input {
+width: 200px;
+margin-top: 20px;
+ background: transparent;
+
+outline: none;
+padding: 10px;
+font-size: 13px;
+border-radius: 10px;
+box-shadow: 4px afff;
+}
+button {
+padding: 5px 20px;
+margin-top: 20px;
+background: transparent;
+border-radius: 30px;
+box-shadow: 4px #fff;
+cursor: pointer;
+}
+body{
+    background-color: rgb(157, 228, 238);
+}
