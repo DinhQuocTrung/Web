@@ -1,4 +1,9 @@
-/* TAG */
+/*== Import ==*/
+
+/* Bootstrap icon */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+/*== TAG ==*/
 *{
     box-sizing: border-box;
     padding: 0;
@@ -11,10 +16,6 @@ img{
 
 ul, li{
     list-style: none;
-}
-
-input{
-    display: block;
 }
 
 header{
@@ -48,10 +49,63 @@ a{
     text-decoration: none;
 }
 
-/* Class */
+/*== Class ==*/
 .nav-item{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 0;
+}
+
+.nav-item .item-nav{
+    padding: 10px;
+    display: block;
+    width: 25%;
+    background-color: #434A52;
+    color: #6f7985;
+    border-width: 3px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.nav-item .item-nav:hover{
+    background-color: #2c3338;
+    transition-duration: 1s;
+}
+
+.nav{
+    margin-top: 10px;
+    background-color: #434A52;
+    padding: 10px;
+    width: 20%;
+    min-width: 90px;
+    border: 3px solid #3B4148;
+    border-left: none;
+}
+
+.block{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 10px;
+    border: 3px solid #2c3338;
+    background-color: #3B4148;
+    overflow: hidden;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+
+.block:hover{
+    background-color: #434A52;
+    margin-left: 5px;
+    transition-duration: 1s;
+}
+
+/*== Id ==*/
+#pageIndex{
+    padding: 10px;
+    background-color: #2c3338;
+    color: #6D7575;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
