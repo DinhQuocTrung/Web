@@ -1,44 +1,202 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.body{
+  display: grid;
+  place-items: center;
+  background-color: #2c3338;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(141, 236, 129);
+  inline-size: 90%;
+  margin: 0;
+  max-inline-size: 20rem;
+ 
 }
-.Login-form {
-    height: 310px;
-     width: 270px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-     align-items: center;
-    background: rgba(0, 0, 0, 0.1);
-     box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
-     color: #fff;
-      padding-top: 60px;
+
+h1{
+  font-size: 40px;
+  font-weight: 200;
 }
-.Login {
-letter-spacing: 1px;}
+
+#msg__err{
+  color: lightcoral;
+}
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+
+
+.icons {
+  display: none;
+}
+
+.icon {
+  block-size: 1em;
+  display: inline-block;
+ 
+  inline-size: 1em;
+  vertical-align: middle;
+  
+}
+
+
+
+
+
+html {
+  box-sizing: border-box;
+  font-size: var(--htmlFontSize);
+}
+
+body {
+  background-color: var(--bodyBackgroundColor);
+  color: var(--bodyColor);
+  font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+  font-size: var(--bodyFontSize);
+  font-weight: var(--bodyFontWeight);
+  line-height: var(--bodyLineHeight);
+  margin: 0;
+  min-block-size: 100vh;
+}
+
+
+
+h1{
+  padding: 20px;
+}
+
+a {
+  color: var(--anchorColor);
+  outline: 0;
+  text-decoration: none;
+}
+
+/* a:focus, */
+a:hover {
+  text-decoration: underline;
+}
+
 
 input {
-width: 200px;
-margin-top: 20px;
- background: transparent;
+  background-image: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  transition: background-color 0.3s;
+}
 
-outline: none;
-padding: 10px;
-font-size: 13px;
-border-radius: 10px;
-box-shadow: 4px afff;
+input[type="submit"] {
+  cursor: pointer;
 }
-button {
-padding: 5px 20px;
-margin-top: 20px;
-background: transparent;
-border-radius: 30px;
-box-shadow: 4px #fff;
-cursor: pointer;
+
+.form {
+  display: grid;
+  gap: var(--formGap);
 }
-body{
-    background-color: rgb(157, 228, 238);
+
+.form input[type="password"],
+.form input[type="text"],
+.form input[type="submit"] {
+  inline-size: 100%;
+}
+
+.style__login {
+  display: flex;
+  margin-top: 5%;
+}
+
+.form__input {
+  flex: 1;
+}
+
+
+
+:root {
+  --loginBorderRadus: 0.25rem;
+  
+  --loginColor: #eee;
+  --loginInputBackgroundColor: #3b4148;
+  --loginInputHoverBackgroundColor: #434a52;
+
+  --loginLabelBackgroundColor: #363b41;
+
+  --loginSubmitBackgroundColor: #ea4c88;
+  --loginSubmitColor: #eee;
+  --loginSubmitHoverBackgroundColor: #d44179;
+}
+
+.login {
+  color: var(--loginColor);
+}
+
+.login label,
+.login input[type="text"],
+.login input[type="password"],
+.login input[type="submit"] {
+  border-radius: var(--loginBorderRadus);
+  padding: 1rem;
+}
+
+.login label {
+  background-color: var(--loginLabelBackgroundColor);
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding-inline: 1.25rem;
+}
+
+.login input[type="password"],
+.login input[type="text"] {
+  background-color: var(--loginInputBackgroundColor);
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.login input[type="password"]:focus,
+.login input[type="password"]:hover,
+.login input[type="text"]:focus,
+.login input[type="text"]:hover {
+  background-color: var(--loginInputHoverBackgroundColor);
+}
+
+.login input[type="submit"] {
+  background-color: var(--loginSubmitBackgroundColor);
+  color: var(--loginSubmitColor);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.login input[type="submit"]:focus,
+.login input[type="submit"]:hover {
+  background-color: var(--loginSubmitHoverBackgroundColor);
+}
+
+
+
+p {
+  margin-block: 1.5rem;
+}
+
+.text--center {
+  text-align: center;
 }
