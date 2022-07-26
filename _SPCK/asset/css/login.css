@@ -7,7 +7,7 @@
 .body{
   display: grid;
   place-items: center;
-  background-color: #2c3338;
+  background-color: #fff;
   font-family: sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -68,11 +68,14 @@ a {
   text-decoration: none;
 }
 
+i{
+  color: #000;
+}
+
 /* a:focus, */
 a:hover {
   text-decoration: underline;
 }
-
 
 input {
   background-image: none;
@@ -107,24 +110,21 @@ input[type="submit"] {
 
 .form__input {
   flex: 1;
+  border: 1px solid #111;
 }
-
-
 
 :root {
   --loginBorderRadus: 0.25rem;
   
-  --loginColor: #eee;
-  --loginInputBackgroundColor: #3b4148;
-  --loginInputHoverBackgroundColor: #434a52;
+  --loginColor: #111;
+  --loginInputBackgroundColor: #eee;
+  --loginInputHoverBackgroundColor: #ffa1a1;
 
-  --loginLabelBackgroundColor: #363b41;
+  --loginLabelBackgroundColor: #fff;
 
   --loginSubmitBackgroundColor: #ea4c88;
   --loginSubmitColor: #eee;
-  --loginSubmitHoverBackgroundColor: #d44179;
 }
-
 .login {
   color: var(--loginColor);
 }
