@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tittle -->
+    <title>Login</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./asset/css/login.css">
+</head>
+  
+<!-- Login -->
+<body class="body">
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Tittle  -->
+    <h1>Login</h1>
+
+    <!-- Wrong alert -->
+    <p id="msg__err"></p>
+
+    <!-- Login -->
+    <div class="login">
+      <div class="input">
+        <!-- Username -->
+        <input type="text" id="login__username" placeholder="Username">
+
+        <!-- Password -->
+        <input type="password" id="login__password" placeholder="Password">
+      </div>
+
+      <!-- Login button -->
+      <button onclick="login()">Login</button>
+
+    </div>
+
+    <!-- Turn back home page -->
+    <p class="message">Not registered? <a href="/index.html">Come back home?</a></p>
+  </div>
+
+  <!-- Js -->
+  <script src="./asset/js/login.js"></script>
+</body>
+</html>

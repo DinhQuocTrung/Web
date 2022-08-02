@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/page2.css">
+    <!-- Icon -->
+    <link rel="icon" href="./asset/img/icon/icon.png">
+    <!-- Tittle -->
+    <title>Page 2</title>
+</head>
+
+<body>
+    <!-- <img src="./asset/img/blog/Ang-co-vat-1.png" alt="" class="bg-image"> -->
+    <!-- Header -->
+    <header>
+        <h1 class="tittle">Page 2</h1>
+        <!-- Nav -->
+        <nav>
+            <div class="item-contain">
+                <ul class="nav-item">
+                    <li class="item item-nav"><a href="./index.html">Home</a></li>
+                    <li class="item item-nav"><a href="./page1.html">Top 5 địa điểm du lịch cho giới trẻ</a></li>
+                    <li class="item item-nav" id="pageIndex">Page 2</a></li>
+                    <li class="item item-nav"><a href="./login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <section class="contain" id="top">
+            <div class="list-sell-item"">
+                <!-- Main item -->
+                <div class="main-sell-item" id="main-sell-item">
+                    <h3 class="sell-item-name"></h3>
+                    <img class="sell-item-img" src="" alt="item">
+                    <p class="sell-item-cost"><s class="sell-item-cost-after"></s></p>
+                    <p class="sell-item-left"></p>
+                    <p class="sell-item-explain"></p>
+                    <p id="msg__err" style="color: red;"></p>
+                    <button class="sell-item-buy" onclick="addToCart()">Add to cart</button>
+                </div>
+                <!----- List item ----->
+
+                <!-- Sell item 1: Disney land -->
+                <div class="sell-item" id="sell-item-1" onclick="index = 1; change()">
+                    <h3 class="sell-item-name">Vé Disney land</h3>
+                    <img class="sell-item-img" src="./asset/img/ticket/Disney-land.png" alt="item">
+                    <p class="sell-item-cost">200$ - <s class="sell-item-cost-after">100$</s></p>
+                    <p class="sell-item-left">Còn lại: 21</p>
+                    <p class="sell-item-explain">Tokyo Disneyland là công viên Disney đầu tiên ngoài nước Mỹ. Giờ mở cửa: 9h sáng tới 10h tối, tuy nhiên có thể sẽ có thay đổi vào một số ngày nhất định và dịp lễ.Công viên gồm 7 khu vực chủ đề với hơn 40 trò chơi thú vị khác nhau.</p>
+                </div>
+
+                <!-- Sell item 2: Rainbow moutain-->
+                <div class="sell-item" id="sell-item-2" onclick="index = 2; change()">
+                    <h3 class="sell-item-name">Vé núi cầu vồng</h3>
+                    <img class="sell-item-img" src="./asset/img/ticket/rainbow-moutain.png" alt="item">
+                    <p class="sell-item-cost">100$ - <s class="sell-item-cost-after">150$</s></p>
+                    <p class="sell-item-left">Còn lại: 30</p>
+                    <p class="sell-item-explain">Vinicunca , hoặc Winikunka , còn được gọi là Montaña de Siete Colores là một ngọn núi ở Andes của Peru với độ cao 5.200 mét trên mực nước biển.Ngọn núi từng được bao phủ bởi các nắp sông băng, nhưng chúng đã bị tan chảy do biến đổi khí hậu khoảng 10.000 năm trước.</p>
+                    
+                </div>
+                <!-- Sell item 3:Ang-co-vat -->
+                <div class="sell-item" id="sell-item-3" onclick="index = 3; change()">
+                    <h3 class="sell-item-name">Vé Ăng-co-vát</h3>
+                    <img class="sell-item-img" src="./asset/img/ticket/Ang-co-vat.png" alt="item">
+                    <p class="sell-item-cost">130$ - <s class="sell-item-cost-after">110$</s></p>
+                    <p class="sell-item-left">Còn lại: 60</p>
+                    <p class="sell-item-explain">Phải, chỉ với 130$ là tấm vé này sẽ là của bạn. Angkor Wat là một quần thể đền đài tại Campuchia và là di tích tôn giáo lớn nhất thế giới. Ban đầu công trình được xây dựng làm đền thờ Ấn Độ giáo của Đế quốc Khmer, và dần dần chuyển thành đền thờ Phật giáo vào cuối thế kỷ XII. Angkor Wat thờ thần Vishnu. Được bảo tồn tốt nhất trong khu vực, Angkor Wat là ngôi đền duy nhất vẫn giữ được vị trí trung tâm tôn giáo. Ngôi đền là đỉnh cao của phong cách kiến trúc Khmer. Nó đã trở thành biểu tượng của đất nước Campuchia, xuất hiện trên quốc kỳ và là điểm thu hút du khách hàng đầu đất nước.</p>
+                    
+                </div>
+                <!-- Sell item 4 Pike market: -->
+                <div class="sell-item" id="sell-item-4" onclick="index = 4; change()">
+                    <h3 class="sell-item-name">Vé Pike market</h3>
+                    <img class="sell-item-img" src="./asset/img/ticket/pike.png" alt="item">
+                    <p class="sell-item-cost">200$ - <s class="sell-item-cost-after">300$</s></p>
+                    <p class="sell-item-left">Còn lại: 20</p>
+                    <p class="sell-item-explain">Pike Place Market là một khu chợ công cộng ở Seattle , Washington, Hoa Kỳ. Nó mở cửa vào ngày 17 tháng 8 năm 1907 và là một trong những chợ nông sản công cộng liên tục hoạt động lâu đời nhất ở Hoa Kỳ. Nhìn ra bờ sông của Vịnh Elliott trên Puget Sound , nó là nơi kinh doanh của nhiều nông dân nhỏ, thợ thủ công và thương gia . Nó được đặt tên cho con phố trung tâm của nó, Pike Place, chạy về phía tây bắc từ Pike Street đến Virginia Street ở rìa phía tây của Downtown Seattle. Chợ Pike Place là điểm đến du lịch nổi tiếng nhất của Seattle và là điểm thu hút khách du lịch được ghé thăm nhiều thứ 33 trên thế giới, với hơn 10 triệu lượt khách hàng năm.</p>
+                </div>
+
+                <!-- Sell item 5: Rừng trên mây -->
+                <div class="sell-item" id="sell-item-5" onclick="index = 5; change()">
+                    <h3 class="sell-item-name">Vé rừng trên mây</h3>
+                    <img class="sell-item-img" src="./asset/img/ticket/Tree.png" alt="item">
+                    <p class="sell-item-cost">12$ - <s class="sell-item-cost-after">11$</s></p>
+                    <p class="sell-item-left">Còn lại: 40</p>
+                    <p class="sell-item-explain">Đây là nơi của những giấc mơ nhiệt đới dành cho  bạn! Là một tình nguyện viên ở Costa Rica , bạn sẽ có cơ hội khám phá những địa điểm đa dạng sinh học nhất thế giới! Và, khu rừng mây trên đỉnh núi Monteverde là một trong những môi trường tự nhiên độc đáo nhất mà bạn sẽ thấy! Khung cảnh tươi tốt cung cấp một nơi nghỉ ngơi chào đón khỏi cái nóng của các bãi biển ven biển Thái Bình Dương. Khung cảnh rất ngoạn mục và có rất nhiều động vật hoang dã để xem.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="contact">
+        <ul class="footer-list">
+            <!-- Image -->
+            <li class="footer-item">
+                <img src="./asset/img/icon/icon.png">
+            </li>
+            <!-- Các trang web -->
+            <li class="footer-item">
+                <h4 class="footer-text">Xem thêm</h4>
+                <ul>
+                    <li class="item item-footer"><a href="./index.html">Home</a></li>
+                    <li class="item item-footer"><a href="#">Top 5 địa điểm du lịch</a></li>
+                    <li class="item item-footer"><a href="./page2.html">Page 2</a></li>
+                    <li class="item item-footer"><a href="./login.html">Login</a></li>
+                </ul>
+            </li>
+            <!-- Team -->
+            <li class="footer-item">
+                <h4 class="footer-text">My team</h4>
+                <ul>
+                    <li class="item item-footer">Đinh Quốc Trung</li>
+                    <li class="item item-footer">Nguyễn Khang</li>
+                </ul>
+            </li>
+            <!-- Contact -->
+            <li class="footer-item">
+                <h4 class="footer-text">Contact with we</h4>
+                <ul>
+                    <li class="item item-footer"><i class="bi bi-google"></i> Google  </li>
+                    <li class="item item-footer"><i class="bi bi-facebook"></i> Facebook</li>
+                    <li class="item item-footer"><i class="bi bi-discord"></i> Discord</li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+    <!-- JS -->
+    <script src="./asset/js/page2.js"></script>
+</body>
+</html>

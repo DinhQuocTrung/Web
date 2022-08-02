@@ -1,0 +1,28 @@
+/* ID */
+section{
+    width: 100%;
+}
+
+/* Class */
+.block{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 10px;
+    border: 3px solid #f5a3a3;
+    /* background-color: #f5a3a3; */
+    background-image: url('./asset/img/other/bk1.png');
+    overflow: hidden;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+
+.block:hover{
+    /* background-color: #f5f4a3; */
+    transition-duration: 1s;
+}
+
+.contain{
+    padding: 0;
+    width: 95%;
+}

@@ -1,0 +1,52 @@
+/*== Id ==*/
+s{
+    font-weight: 100;
+}
+
+img{
+    width: 100%;
+}
+
+/*== Class ==*/
+.list-sell-item{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto;
+}
+
+.contain{
+    padding: 20px;
+}
+
+.sell-item{
+    /* width: 60%; */
+    min-width: 300px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.main-sell-item{
+    width: 100%;
+    min-width: 300px;
+    font-size: 20px;
+    cursor: pointer;
+    grid-row: 1/span 2;
+    grid-column: 1/ span 2;
+}
+
+/* .main-sell-item img{
+    
+} */
+
+.main-sell-item .sell-item-buy{
+    border: none;
+    padding: 10px;
+    background-color: #fff;
+    transition-duration: 1s;
+}
+
+.main-sell-item .sell-item-buy:hover{
+    border: none;
+    background-color: #ffa7a7;
+    transition-duration: 1s;
+}
